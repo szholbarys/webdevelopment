@@ -1,4 +1,4 @@
-* {
+*{
     text-decoration: none;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 .second {
-    margin-left: 890px;
+    margin-left: 1100px;
     margin-top: -2.2vh;
     font-size: 13px;
 }
@@ -63,7 +63,7 @@ a:hover {
 }
 
 .micro-photo img {
-    width: 1300px;
+    width: 100%;
     height: 457px;
 }
 
@@ -118,12 +118,16 @@ a:hover {
 }
 
 .kostil {
-    margin-left: 25px;
+    margin-left: 55px;
 }
 
 .kostil2 {
     margin-left: 25px;
 }
+/* #kostilphoto{
+    margin-left: 45px;
+
+} */
 
 .important div img {
     height: 160px;

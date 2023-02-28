@@ -1,0 +1,27 @@
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+
+<h3 id="fH1">Product Details</h3>
+
+<div id="details" *ngIf="product">
+  <img src="{{img}}" alt="tel" >
+  <div class="detailsss">
+    <h3>{{ product.name }}</h3>
+    <h4>Price : {{ product.price}} tenge</h4>
+    <h4>Color : {{ product.color}} </h4>
+    <h4>Rating : {{ product.rating}} </h4>
+    <h4>Memory : {{ product.memory}}GB </h4>
+    <h4><a class="kaspi" target=”_blank” href="{{product.kaspiLink}}"> Link to KaspiKz</a></h4>
+    <p>{{ product.description }}</p>
+  </div>
+  <span id="shar">Share: </span>
+  <button id="share" (click)="shareClick(product.kaspiLink, product.name)" ><img id="shareImg" src="assets/teleLogo.png" alt="tel2"></button>
+  <div id="likes">
+    <button  id="likeButton" (click)="likeFun(product.like)"><i id="like" class="material-icons md-48"> thumb_up </i></button><br>
+    <span id="likeCnt">{{product.like}}</span>
+  </div>
+  <button (click)="delete(product.id)" routerLink="/"  id="removeBtn">remove product</button>
+</div>
+<span></span>
